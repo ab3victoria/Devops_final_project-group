@@ -2,12 +2,14 @@
 <html>   
 <head>  
 <meta name="viewport" content="width=device-width, initial-scale=1">  
-<title> Login Page </title>  
+<title> Devops Project </title>  
 <script>
 		function login(){
 			var password = document.getElementById("password").value
 			var username = document.getElementById("username").value
 			var result = document.getElementById("result")
+			var link_shop = document.getElementById("link")
+			
 			if( password == "" || username == "")
 			{
 				alert("Please enter username and password")
@@ -15,10 +17,11 @@
 			else 
 			{
 				result.style.display = "block"
-				if (password == "admin" && username == "admin")
+				if (password == "1234567" && username == "user")
 				{	
 					result.style.backgroundColor = "green";
-					result.innerHTML = "Success!"
+					result.innerHTML = "Success!";
+					link_shop.style.display = "inline-block";
 				}
 				else
 				{
@@ -40,9 +43,10 @@
 <style>   
 Body {  
   font-family: Calibri, Helvetica, sans-serif;   
+  background-color: #FFC300;
 }  
 button {   
-       background-color: #4CAF50;   
+       background-color:  #581845 ;   
        width: 100%;  
         color: orange;   
         padding: 15px;   
@@ -51,14 +55,15 @@ button {
         cursor: pointer;   
          }   
  form {   
-        border: 3px solid #f1f1f1;   
+        border: 3px solid #f1f1f1;
+
     }   
  input[type=text], input[type=password] {   
         width: 100%;   
         margin: 8px 0;  
         padding: 12px 20px;   
         display: inline-block;   
-        border: 2px solid green;   
+        border: 2px solid  #581845 ;   
         box-sizing: border-box;   
     }  
  button:hover {   
@@ -75,7 +80,7 @@ button {
 		margin: auto;
 		width: 500px;
         padding: 25px; 
-        background-color: lightblue;  
+        background-color:  white ;  
     }
 	
   .result {
@@ -88,20 +93,37 @@ button {
 	  font-size: 20px;
 	  color: white;
   }
+  
+  img{
+	  height:300px;
+	  width:300px;
+  }
 </style>   
 </head>    
 <body>    
-    <center> <h1>  Form </h1> </center>   
+    <center> 
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png">
+	<h1>Devops Project - Login Form </h1> </center>   
         <div class="container">   
             <label>Username : </label>   
             <input type="text" placeholder="Enter Username" name="username" id="username" required>  
             <label>Password : </label>   
-            <input type="password" placeholder="Enter Password" name="password" id="password" required>  
-            <button type="button" onclick="login()" id="login-btn">Login</button>   
-            <input type="checkbox" checked="checked"> Remember me   
-            <button type="button" class="cancelbtn" onclick="clean()"> Cancel</button>   
-            Forgot <a href="#"> password? </a>
+            <input type="password" placeholder="Enter Password"  id="password" required>  
+            <button type="button" onclick="login()" id="login-btn">Login</button> 
+			<div id="link" class="link" style="display:none">
+			<a id="shopingLink" href="https://advantageonlineshopping.com/">Link to registration</a>
+			</div>	
+          
 			<div class="result" id="result"></div>
-        </div>      
+        </div>     
+
+
+		<div class="container">   
+            <center> <h3>David ,
+					Shahar ,
+					Hadar ,
+					Vika </h3>
+			</center>   
+        </div>     		
 </body>     
 </html>  
