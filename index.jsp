@@ -91,7 +91,7 @@ button {
 </style>   
 </head>    
 <body>    
-    <center> <h1> Teacher Login Form </h1> </center>   
+    <center> <h1> Student Login Form </h1> </center>   
         <div class="container">   
             <label>Username : </label>   
             <input type="text" placeholder="Enter Username" name="username" id="username" required>  
