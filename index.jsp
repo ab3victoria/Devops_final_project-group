@@ -6,14 +6,14 @@
 <script>
 	var choice;
 		function login(){
-			var password = document.getElementById("password").value
-			var username = document.getElementById("username").value
-			var result = document.getElementById("result")
-			var link_shop = document.getElementById("link")
+			var password = document.getElementById("password").value;
+			var username = document.getElementById("username").value;
+			var result = document.getElementById("result");
+			var link_shop = document.getElementById("link");
 			
 			if( password == "" || username == "")
 			{
-				alert("Please enter username and password")
+				alert("Please enter username and password");
 			}
 			else 
 			{
