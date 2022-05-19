@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">  
 <title> Devops Project </title>  
 <script>
-	
+	var check;
 		function login(){
 			var password = document.getElementById("password").value;
 			var username = document.getElementById("username").value;
