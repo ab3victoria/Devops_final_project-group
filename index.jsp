@@ -31,57 +31,52 @@
 			}
 		}
 		
-		function clean(){
-			var password = document.getElementById("password");
-			var username = document.getElementById("username");
-			var result = document.getElementById("result");
-			password.value = "";
-			username.value = "";
-			result.style.display = "none";
-		}
 	</script>
 <style>   
-Body {  
-  font-family: Calibri, Helvetica, sans-serif;   
-  background-color: #FFC300;
-}  
-button {   
+	body {  
+	  font-family: Calibri;   
+	  background-color: #FFC300;
+	}  
+
+
+	.container {
+		margin: 15px auto;
+		width: 400px;
+        padding: 25px; 
+        background-color:  white ;  
+    }
+	
+	button {   
        background-color:  #581845 ;   
        width: 100%;  
-        color: orange;   
+        color: #f1f1f1;   
         padding: 15px;   
         margin: 10px 0px;   
         border: none;   
         cursor: pointer;   
-         }   
- form {   
-        border: 3px solid #f1f1f1;
-
+      }   
+	  
+	button:hover {   
+        opacity: 0.7;   
     }   
- input[type=text], input[type=password] {   
+ 
+	form {   
+        border: 2px solid #f1f1f1;
+    }   
+	
+	input {   
         width: 100%;   
         margin: 8px 0;  
         padding: 12px 20px;   
         display: inline-block;   
         border: 2px solid  #581845 ;   
         box-sizing: border-box;   
-    }  
- button:hover {   
-        opacity: 0.7;   
-    }   
-  .cancelbtn {   
-        width: auto;   
-        padding: 10px 18px;  
-        margin: 10px 5px;  
-    }   
-        
-     
- .container {
-		margin: auto;
-		width: 500px;
-        padding: 25px; 
-        background-color:  white ;  
-    }
+    } 
+	
+	
+
+         
+
 	
   .result {
 	  width: 200px;
@@ -119,10 +114,10 @@ button {
 
 
 		<div class="container">   
-            <center> <h3>David ,
+            <center> <h2>David ,
 					Shahar ,
 					Hadar ,
-					Vika </h3>
+					Vika </h2>
 			</center>   
         </div>     		
 </body>     
