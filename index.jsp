@@ -5,6 +5,9 @@
 <title> Devops Project </title>  
 <script>
 	var check;
+	var check;
+	var check;
+	var check;
 		function login(){
 			var password = document.getElementById("password").value;
 			var username = document.getElementById("username").value;
