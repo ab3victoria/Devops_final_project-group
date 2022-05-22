@@ -105,8 +105,6 @@
             <input type="text" placeholder="Enter Username" name="username" id="username" required>  
             <label>Password : </label>   
             <input type="password" placeholder="Enter Password"  id="password" required>  
-			 <input type="checkbox" checked  id="checkbox">   
-			 <center>Stay signed in<center>
 			
             <button type="button" onclick="login()" id="login-btn">Login</button> 
 			<div id="link" class="link" style="display:none">
